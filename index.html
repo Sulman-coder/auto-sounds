@@ -158,7 +158,7 @@
     .support-card p{color:var(--muted);font-size:13px}
 
     /* Contact */
-    .contact-section{padding:55px 7%;background:#fff}
+    .contact-section{padding:55px 7%; background:#fff; color:blue }
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
     .contact-copy h2{font-size:28px;margin-bottom:9px}
     .contact-copy>p{color:var(--muted);font-size:13px;max-width:390px;margin-bottom:24px}
@@ -183,6 +183,77 @@
     }
     .footer-links{display:flex;gap:27px;color:#d7dfeb}
     .footer-links a:hover{color:#fff}
+
+
+
+/* ===== DARK TEXT FOR LIGHT/WHITE SECTIONS ===== */
+
+/* Main headings */
+.section-heading h2,
+.contact-copy h2,
+.card h3,
+.support-card h3,
+.feature h3,
+.info h4 {
+  color: #111827 !important;
+}
+
+/* Paragraph text */
+.section-heading p,
+.card p,
+.support-card p,
+.feature p,
+.info p,
+.contact-copy > p,
+.contact-item span {
+  color: #374151 !important;
+}
+
+/* Small labels */
+.eyebrow,
+.tag,
+.read {
+  color: #1768d4 !important;
+}
+
+/* ===== MOBILE STICKY PHONE BUTTON ===== */
+
+.mobile-phone-bar {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .mobile-phone-bar {
+    display: flex !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 99999;
+    background: #1768d4 !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -3px 12px rgba(0,0,0,.20);
+  }
+
+  .mobile-phone-bar a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+}
+
 
     /* Responsive */
     @media(max-width:1000px){
@@ -238,6 +309,11 @@
     /* .mobile-phone-bar {
   display: none;
 } */
+
+
+.mobile-phone-bar {
+  display: block;
+}
 
 @media (max-width: 760px) {
   .mobile-phone-bar {
@@ -445,7 +521,7 @@ footer{
           <h2>Contact Us</h2>
           <p>Have a car audio question? Send us a message and we'll get back to you shortly.</p>
           <!-- <div class="contact-item"><div class="ci">✉</div><div><strong>Email</strong><span>hello@autosoundguide.com</span></div></div> -->
-          <div class="contact-item"><div class="ci">☎</div><div><strong>Phone</strong><span>1-888-671-1140</span></div></div>
+          <div class="contact-item"><div class="ci">☎</div><div><strong>Phone</strong><span>1-888-671-3740</span></div></div>
           <div class="contact-item"><div class="ci">◷</div><div><strong>Hours</strong><span>Mon - Fri: 9:00 AM - 6:00 PM</span></div></div>
         </div>
 
@@ -471,14 +547,13 @@ footer{
       <!-- <a href="#contact">Contact Us</a> -->
     </div>
     <div class="mobile-phone-bar">
-  <a href="tel:+18886711140">
-    ☎ &nbsp; Call Us: 1-888-671-1140
+  <a href="tel:+18886713740">
+    ☎ &nbsp; Call Us: 1-888-671-3740
   </a>
 </div>
 </div>
   </footer>
-
-</div>
+  
 
 <script>
   const menuBtn = document.getElementById('menuBtn');
