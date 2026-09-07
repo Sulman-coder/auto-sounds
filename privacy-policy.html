@@ -77,7 +77,7 @@
       overflow:hidden;
       background:
         linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.68) 36%,rgba(0,0,0,.10) 75%),
-        url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1800&q=85") center/cover;
+        url("/hero.jpg") center/cover;
     }
     .hero-content{padding:45px 7%;max-width:590px;color:#fff}
     .hero h1{font-size:52px;line-height:1.04;letter-spacing:-1.5px;margin-bottom:17px}
@@ -243,6 +243,38 @@
       .hero-actions{flex-direction:column;align-items:stretch}
       .primary-btn,.outline-btn{width:100%}
     }
+
+
+    @media (max-width: 760px) {
+  .mobile-phone-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 9999;
+    background: #1768d4;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-phone-bar a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+}
   </style>
 </head>
 <body><div class="site"><header>
@@ -276,10 +308,16 @@
      
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms-of-use.html">Terms of Use</a>
-      
+      <a href="refund-policy.html">Refund Policy</a>
+
+       <div class="mobile-phone-bar">
+  <a href="tel:+15551234567">
+    ☎ &nbsp; Call Us: 1-888-671-1140
+  </a>
+</div>
     </div>
   </footer>
-  <div class="mobile-phone-bar"><a href="tel:+15551234567">☎ &nbsp; Call Us: (555) 123-4567</a></div></div>
+
 <script>
 const menuBtn=document.getElementById("menuBtn"),nav=document.getElementById("nav");
 menuBtn.addEventListener("click",()=>{nav.classList.toggle("open");menuBtn.textContent=nav.classList.contains("open")?"✕":"☰"});

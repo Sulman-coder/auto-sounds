@@ -79,7 +79,7 @@
       overflow:hidden;
       background:
         linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.68) 36%,rgba(0,0,0,.10) 75%),
-        url("/hero.jpg") center/cover;
+        url("/hero1.jpg") center/cover;
     }
     .hero-content{padding:45px 7%;max-width:590px;color:#fff}
     .hero h1{font-size:52px;line-height:1.04;letter-spacing:-1.5px;margin-bottom:17px}
@@ -270,6 +270,72 @@
   }
 }
   </style>
+
+<style id="dark-theme-override">
+:root{
+  --dark-bg:#0a0d12;
+  --dark-surface:#11161d;
+  --dark-surface-2:#171d26;
+  --dark-border:#28313d;
+  --dark-text:#f2f5f8;
+  --dark-muted:#aeb8c4;
+  --dark-accent:#4da3ff;
+}
+html,body{
+  background:var(--dark-bg)!important;
+  color:var(--dark-text)!important;
+}
+body{
+  background-image:radial-gradient(circle at 15% 0%,rgba(77,163,255,.10),transparent 28%),
+                   radial-gradient(circle at 85% 20%,rgba(77,163,255,.06),transparent 25%)!important;
+}
+header,nav,.navbar,.topbar,.hero,.section,.content-section,footer{
+  background-color:transparent!important;
+}
+header{
+  background:rgba(10,13,18,.88)!important;
+  border-bottom:1px solid var(--dark-border)!important;
+}
+.card,.feature-card,.guide-card,.support-card,.info-card,.contact-card,
+[class*="card"],form{
+  background:var(--dark-surface)!important;
+  border-color:var(--dark-border)!important;
+  box-shadow:0 12px 35px rgba(0,0,0,.25)!important;
+}
+h1,h2,h3,h4,h5,h6,p,li,span,label{
+  color:var(--dark-text);
+}
+p,.muted,.subtitle,.description{
+  color:var(--dark-muted)!important;
+}
+a{
+  color:var(--dark-text);
+}
+a:hover{
+  color:var(--dark-accent)!important;
+}
+button,.btn,.cta,.primary-btn{
+  background:var(--dark-accent)!important;
+  color:#07111d!important;
+  border-color:var(--dark-accent)!important;
+}
+button:hover,.btn:hover,.cta:hover,.primary-btn:hover{
+  filter:brightness(1.1);
+}
+input,textarea,select{
+  background:#0d1218!important;
+  color:var(--dark-text)!important;
+  border:1px solid var(--dark-border)!important;
+}
+input::placeholder,textarea::placeholder{
+  color:#7f8a97!important;
+}
+footer{
+  background:#07090d!important;
+  border-top:1px solid var(--dark-border)!important;
+}
+</style>
+
 </head>
 
 <body>
@@ -299,9 +365,9 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Better Sound.<br><span>Every Drive.</span></h1>
-        <p>Helpful information and guides about car radios, audio features, installation, and troubleshooting.</p>
+        <p>Simple car audio information, practical guides, installation tips, and troubleshooting help.</p>
         <div class="hero-actions">
-          <a class="primary-btn" href="#audio-guide">▣ &nbsp; Explore Guides</a>
+          <a class="primary-btn" href="#audio-guide">▣ &nbsp; Explore Audio Guides</a>
           <a class="outline-btn" href="#contact">✉ &nbsp; Contact Us</a>
         </div>
       </div>
@@ -310,52 +376,52 @@
     <section class="features">
       <div class="feature">
         <div class="round-icon">▣</div>
-        <div><h3>Car Radio Basics</h3><p>Understand car radio types, features, and how they work.</p></div>
+        <div><h3>Car Audio Basics</h3><p>Understand car radios, audio systems, features, and how they work.</p></div>
       </div>
       <div class="feature">
         <div class="round-icon">♢</div>
-        <div><h3>Bluetooth & Connectivity</h3><p>Pair devices, stream music, and stay connected on the go.</p></div>
+        <div><h3>Bluetooth & Audio Connectivity</h3><p>Connect devices, stream music, and enjoy your audio on the go.</p></div>
       </div>
       <div class="feature">
         <div class="round-icon">⚒</div>
-        <div><h3>Troubleshooting</h3><p>Fix common audio issues with easy step-by-step help.</p></div>
+        <div><h3>Troubleshooting</h3><p>Find practical solutions for common audio and sound issues.</p></div>
       </div>
       <div class="feature">
         <div class="round-icon">◖</div>
-        <div><h3>Installation Tips</h3><p>Learn what to consider before installing or replacing a unit.</p></div>
+        <div><h3>Installation Tips</h3><p>Know what to consider before installing or replacing an audio unit.</p></div>
       </div>
     </section>
 
     <section class="info-strip">
-      <div class="info"><div class="info-icon">♢</div><div><h4>Independent Information</h4><p>We are not affiliated with any car radio or audio manufacturer.</p></div></div>
-      <div class="info"><div class="info-icon">✓</div><div><h4>Helpful Guides</h4><p>Clear and easy-to-follow instructions.</p></div></div>
-      <div class="info"><div class="info-icon">▤</div><div><h4>Step-by-Step Support</h4><p>Practical solutions for common audio questions.</p></div></div>
-      <div class="info"><div class="info-icon">♧</div><div><h4>Here to Help</h4><p>We're here to help you make informed decisions.</p></div></div>
+      <div class="info"><div class="info-icon">♢</div><div><h4>Independent Car Audio Information</h4><p>We are not affiliated with any car radio or audio manufacturer.</p></div></div>
+      <div class="info"><div class="info-icon">✓</div><div><h4>Practical Audio Guides</h4><p>Clear and easy-to-follow instructions.</p></div></div>
+      <div class="info"><div class="info-icon">▤</div><div><h4>Simple Step-by-Step Help</h4><p>Practical solutions for common audio questions.</p></div></div>
+      <div class="info"><div class="info-icon">♧</div><div><h4>Audio Help When You Need It</h4><p>We're here to help you make informed decisions.</p></div></div>
     </section>
 
     <section class="content-section" id="audio-guide">
       <div class="section-heading">
         <div class="eyebrow">Audio Guide</div>
-        <h2>Learn More About Your Car Audio</h2>
-        <p>Browse our guides to get the most out of your car audio system.</p>
+        <h2>Get More From Your Car Audio</h2>
+        <p>Explore practical guides to better understand and improve your car audio system.</p>
       </div>
 
       <div class="guide-grid">
         <article class="card">
-          <img src="radio.jpg" alt="Car dashboard and radio">
-          <div class="card-body"><div class="tag">Basics</div><h3>Understanding Car Radios</h3><p>Learn about different types of car radios and their features.</p><a class="read" href="#contact">Read Guide →</a></div>
+          <img src="dashboard-radio.avif" alt="Car dashboard and radio">
+          <div class="card-body"><div class="tag">Basics</div><h3>Understanding Car Audio Systems</h3><p>Learn about different types of car radios and their features.</p><a class="read" href="#contact">Read Guide →</a></div>
         </article>
         <article class="card">
-          <img src="cover-6.jpg" alt="Phone connectivity">
-          <div class="card-body"><div class="tag">Connectivity</div><h3>Connecting via Bluetooth</h3><p>Step-by-step instructions to connect your phone and stream audio.</p><a class="read" href="#contact">Read Guide →</a></div>
+          <img src="blootuth.jpeg" alt="Phone connectivity">
+          <div class="card-body"><div class="tag">Connectivity</div><h3>Connecting Your Phone via Bluetooth</h3><p>Step-by-step instructions to connect your phone and stream audio.</p><a class="read" href="#contact">Read Guide →</a></div>
         </article>
         <article class="card">
-          <img src="speakers.jpg" alt="Car speaker">
-          <div class="card-body"><div class="tag">Upgrades</div><h3>Upgrading Your Speakers</h3><p>Improve sound quality with the right speakers and setup.</p><a class="read" href="#contact">Read Guide →</a></div>
+          <img src="speakers2.jpg" alt="Car speaker">
+          <div class="card-body"><div class="tag">Upgrades</div><h3>Improving Your Car Audio</h3><p>Improve sound quality with the right speakers and setup.</p><a class="read" href="#contact">Read Guide →</a></div>
         </article>
         <article class="card">
-          <img src="instalation.jpg" alt="Car audio installation">
-          <div class="card-body"><div class="tag">Installation</div><h3>Installation Considerations</h3><p>Important things to know before installing or replacing a unit.</p><a class="read" href="#contact">Read Guide →</a></div>
+          <img src="instalatrionq2.webp" alt="Car audio installation">
+          <div class="card-body"><div class="tag">Installation</div><h3>Planning an Audio Installation</h3><p>Important things to know before installing or replacing a unit.</p><a class="read" href="#contact">Read Guide →</a></div>
         </article>
       </div>
     </section>
@@ -364,12 +430,12 @@
       <div class="section-heading">
         <div class="eyebrow">Support</div>
         <h2>Need Help With Your Car Audio?</h2>
-        <p>Find practical answers for common audio and installation questions.</p>
+        <p>Get clear answers to common car audio, connectivity, and installation questions.</p>
       </div>
       <div class="support-grid">
-        <div class="support-card"><div class="big-icon">⚒</div><h3>Troubleshooting</h3><p>Work through common radio, Bluetooth, speaker and sound problems step by step.</p></div>
-        <div class="support-card"><div class="big-icon">▤</div><h3>Installation Help</h3><p>Understand the important things to check before installing or replacing an audio unit.</p></div>
-        <div class="support-card"><div class="big-icon">✓</div><h3>General Questions</h3><p>Contact us if you need help finding the right information for your setup.</p></div>
+        <div class="support-card"><div class="big-icon">⚒</div><h3>Troubleshooting</h3><p>Troubleshoot common radio, Bluetooth, speaker, and sound problems with practical guidance.</p></div>
+        <div class="support-card"><div class="big-icon">▤</div><h3>Installation Help</h3><p>Review the key things to check before installing or replacing a car audio unit.</p></div>
+        <div class="support-card"><div class="big-icon">✓</div><h3>General Questions</h3><p>Reach out if you need help finding useful information for your car audio setup.</p></div>
       </div>
     </section>
 
@@ -377,9 +443,9 @@
       <div class="contact-grid">
         <div class="contact-copy">
           <h2>Contact Us</h2>
-          <p>Have questions or need assistance? We're here to help. Reach out to us and we'll get back to you shortly.</p>
-          <div class="contact-item"><div class="ci">✉</div><div><strong>Email</strong><span>hello@autosoundguide.com</span></div></div>
-          <div class="contact-item"><div class="ci">☎</div><div><strong>Phone</strong><span>(555) 123-4567</span></div></div>
+          <p>Have a car audio question? Send us a message and we'll get back to you shortly.</p>
+          <!-- <div class="contact-item"><div class="ci">✉</div><div><strong>Email</strong><span>hello@autosoundguide.com</span></div></div> -->
+          <div class="contact-item"><div class="ci">☎</div><div><strong>Phone</strong><span>1-888-671-1140</span></div></div>
           <div class="contact-item"><div class="ci">◷</div><div><strong>Hours</strong><span>Mon - Fri: 9:00 AM - 6:00 PM</span></div></div>
         </div>
 
@@ -400,11 +466,13 @@
       <!-- <a href="#home">About Us</a> -->
       <a href="/privacy-policy.html">Privacy Policy</a>
       <a href="/terms-of-use.html">Terms of Use</a>
+      <a href="/refund-policy.html">Refund Policy</a>
+
       <!-- <a href="#contact">Contact Us</a> -->
     </div>
     <div class="mobile-phone-bar">
-  <a href="tel:+15551234567">
-    ☎ &nbsp; Call Us: (555) 123-4567
+  <a href="tel:+18886711140">
+    ☎ &nbsp; Call Us: 1-888-671-1140
   </a>
 </div>
 </div>
