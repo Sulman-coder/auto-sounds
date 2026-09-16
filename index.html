@@ -414,6 +414,15 @@ footer{
   background:#07090d!important;
   border-top:1px solid var(--dark-border)!important;
 }
+
+/* ===== Larger Call Now Buttons - Desktop + Mobile ===== */
+.phone-contact-item .ci { font-size:28px; width:36px; min-width:36px; }
+.phone-contact-item strong { display:block; font-size:16px; margin-bottom:6px; }
+.desktop-call-btn { display:inline-flex !important; align-items:center; justify-content:center; padding:13px 20px; border-radius:10px; background:#1f7ae0; color:#fff !important; font-size:16px !important; font-weight:800 !important; line-height:1.2; text-decoration:none !important; box-shadow:0 5px 14px rgba(31,122,224,.25); transition:transform .2s ease,box-shadow .2s ease; }
+.desktop-call-btn:hover { transform:translateY(-2px); box-shadow:0 8px 18px rgba(31,122,224,.32); }
+.mobile-phone-bar { height:74px !important; }
+.mobile-phone-bar a { font-size:20px !important; font-weight:800 !important; letter-spacing:.2px; }
+@media (max-width:768px) { .phone-contact-item .ci { font-size:26px; width:34px; min-width:34px; } .desktop-call-btn { width:100%; box-sizing:border-box; padding:14px 16px; font-size:17px !important; } .mobile-phone-bar { height:76px !important; } .mobile-phone-bar a { font-size:19px !important; } }
 </style>
 
 </head>
@@ -533,7 +542,7 @@ footer{
           <h2>Contact Us</h2>
           <p>Have a car audio question? Send us a message and we'll get back to you shortly.</p>
           <!-- <div class="contact-item"><div class="ci">✉</div><div><strong>Email</strong><span>hello@autosoundguide.com</span></div></div> -->
-          <div class="contact-item"><div class="ci">☎</div><div><strong>Phone</strong><span>1-888-671-3740</span></div></div>
+          <div class="contact-item phone-contact-item"><div class="ci">☎</div><div><strong>Phone</strong><a class="desktop-call-btn" href="tel:+18886713740">Call Now: 1-888-671-3740</a></div></div>
           <div class="contact-item"><div class="ci">◷</div><div><strong>Hours</strong><span>Mon - Fri: 9:00 AM - 6:00 PM</span></div></div>
         </div>
 
@@ -554,7 +563,7 @@ footer{
     <div class="footer-links">
       <!-- <a href="#home">About Us</a> -->
       <a href="/privacy-policy.html">Privacy Policy</a>
-      <a href="/terms-of-use.html">Terms of Use</a>
+     
       <a href="/refund-policy.html">Refund Policy</a>
 
       <!-- <a href="#contact">Contact Us</a> -->

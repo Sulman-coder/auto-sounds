@@ -1,262 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy | AutoSound Guide</title>
-<style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      color:#101827;
-      background:#fff;
-      line-height:1.5;
-    }
-    a{text-decoration:none;color:inherit}
-    img{display:block;width:100%;object-fit:cover}
-    button,input,textarea{font:inherit}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    :root{
-      --blue:#1768d4;
-      --dark:#071a35;
-      --light:#eef4fb;
-      --border:#dbe3ee;
-      --muted:#596579;
-      --max:1350px;
+  <title>Privacy Policy | freshmusic.store</title>
+ 
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .site{
-      width:min(100% - 28px,var(--max));
-      margin:0 auto;
-      border-left:1px solid var(--border);
-      border-right:1px solid var(--border);
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.7;
     }
 
-    /* Header */
-    header{
-      height:70px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:0 32px;
-      background:#fff;
-      position:sticky;
-      top:0;
-      z-index:50;
-      border-bottom:1px solid var(--border);
+    .site {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    .brand{display:flex;align-items:center;gap:11px}
+
+    header {
+      background: #111111;
+      border-bottom: 1px solid #2a2a2a;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .brand-sub {
+      color: #aaa;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #aaa;
+    }
+
+    .top-btn {
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #555;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .top-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .page-content {
+      width: min(900px, 90%);
+      margin: 60px auto;
+      flex: 1;
+    }
+
+    .page-content h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .updated {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    .policy-section {
+      margin-bottom: 32px;
+    }
+
+    .policy-section h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .policy-section p {
+      color: #d0d0d0;
+      margin-bottom: 12px;
+    }
+
+    .policy-section ul {
+      padding-left: 22px;
+      color: #d0d0d0;
+    }
+
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #111;
+      border-top: 1px solid #2a2a2a;
+      padding: 25px 6%;
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .mobile-phone-bar {
+      width: 100%;
+      background: #151515;
+      border-top: 1px solid #292929;
+      padding: 14px 10px;
+      text-align: center;
+    }
+
+    .mobile-phone-bar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+
+
+     .brand{display:flex;align-items:center;gap:11px; text-decoration: none;}
     .brand-icon{
       width:38px;height:38px;display:grid;place-items:center;
       color:var(--blue);font-size:27px;font-weight:800;
     }
-    .brand-title{font-size:18px;font-weight:800;line-height:1.05}
-    .brand-sub{font-size:11px;color:#475569;margin-top:2px}
-    nav{display:flex;align-items:center;gap:42px}
-    nav a{
-      font-size:14px;font-weight:600;padding:25px 0;
-      position:relative;
-    }
-    nav a.active:after{
-      content:"";position:absolute;left:0;right:0;bottom:13px;height:2px;background:var(--blue)
-    }
-    .top-btn,.primary-btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:9px;
-      background:var(--blue);color:#fff;border:0;border-radius:7px;
-      padding:11px 18px;font-weight:700;cursor:pointer;
-      box-shadow:0 3px 8px #1768d42b;
-    }
-    .mobile-toggle{display:none;border:0;background:none;font-size:27px;cursor:pointer}
 
-    /* Hero */
-    .hero{
-      min-height:310px;
-      position:relative;
-      display:flex;align-items:center;
-      overflow:hidden;
-      background:
-        linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.68) 36%,rgba(0,0,0,.10) 75%),
-        url("/hero.jpg") center/cover;
-    }
-    .hero-content{padding:45px 7%;max-width:590px;color:#fff}
-    .hero h1{font-size:52px;line-height:1.04;letter-spacing:-1.5px;margin-bottom:17px}
-    .hero h1 span{color:#2e82f3}
-    .hero p{font-size:17px;max-width:430px;color:#f3f6fa;margin-bottom:22px}
-    .hero-actions{display:flex;gap:18px;flex-wrap:wrap}
-    .outline-btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:9px;
-      padding:10px 19px;border:1px solid #fff;border-radius:7px;color:#fff;
-      background:transparent;font-weight:700
-    }
-
-    /* Feature strip */
-    .features{
-      display:grid;grid-template-columns:repeat(4,1fr);
-      border-bottom:1px solid var(--border);
-      background:#fff;
-    }
-    .feature{
-      display:flex;gap:14px;padding:26px 27px;
-      border-right:1px solid var(--border);
-    }
-    .feature:last-child{border-right:0}
-    .round-icon{
-      flex:0 0 56px;width:56px;height:56px;border-radius:50%;
-      display:grid;place-items:center;background:#eaf2fc;color:var(--blue);
-      font-size:25px;font-weight:700;
-    }
-    .feature h3{font-size:15px;margin:2px 0 4px}
-    .feature p{font-size:12px;color:var(--muted);line-height:1.4}
-
-    /* Info strip */
-    .info-strip{
-      display:grid;grid-template-columns:repeat(4,1fr);
-      background:#f0f5fb;
-    }
-    .info{
-      padding:22px 27px;display:flex;gap:15px;border-right:1px solid #d8e1ed;
-    }
-    .info:last-child{border-right:0}
-    .info-icon{
-      color:var(--blue);font-size:29px;flex:0 0 auto
-    }
-    .info h4{font-size:13px;margin-bottom:4px}
-    .info p{font-size:11px;color:#475569;line-height:1.35}
-
-    /* Sections */
-    section.content-section{padding:65px 7%}
-    .section-heading{text-align:center;margin-bottom:32px}
-    .eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase}
-    .section-heading h2{font-size:31px;margin:5px 0 8px}
-    .section-heading p{color:var(--muted);font-size:14px}
-
-    .guide-grid{
-      display:grid;grid-template-columns:repeat(4,1fr);gap:18px
-    }
-    .card{
-      border:1px solid var(--border);border-radius:7px;overflow:hidden;background:#fff;
-      transition:.2s transform,.2s box-shadow
-    }
-    .card:hover{transform:translateY(-3px);box-shadow:0 8px 25px #12213b12}
-    .card img{height:145px}
-    .card-body{padding:15px}
-    .tag{font-size:10px;color:var(--blue);font-weight:800;text-transform:uppercase}
-    .card h3{font-size:15px;margin:5px 0 7px}
-    .card p{font-size:12px;color:var(--muted);margin-bottom:11px}
-    .read{font-size:12px;color:var(--blue);font-weight:800}
-
-    /* Support */
-    .support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .support-card{
-      padding:28px;border:1px solid var(--border);border-radius:8px;background:#fff
-    }
-    .support-card .big-icon{font-size:34px;color:var(--blue);margin-bottom:12px}
-    .support-card h3{margin-bottom:7px}
-    .support-card p{color:var(--muted);font-size:13px}
-
-    /* Contact */
-    .contact-section{padding:55px 7%;background:#fff}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
-    .contact-copy h2{font-size:28px;margin-bottom:9px}
-    .contact-copy>p{color:var(--muted);font-size:13px;max-width:390px;margin-bottom:24px}
-    .contact-item{display:flex;gap:13px;margin:16px 0}
-    .contact-item .ci{color:var(--blue);font-size:20px;width:24px}
-    .contact-item strong{font-size:13px;display:block}
-    .contact-item span{font-size:12px;color:var(--muted)}
-    form{display:grid;gap:11px}
-    input,textarea{
-      width:100%;border:1px solid var(--border);border-radius:5px;
-      padding:11px 12px;outline:none;background:#fff
-    }
-    input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1768d414}
-    textarea{min-height:120px;resize:vertical}
-    form button{justify-self:start}
-
-    /* Footer */
-    footer{
-      background:#071a35;color:#fff;
-      display:flex;align-items:center;justify-content:space-between;
-      padding:14px 35px;font-size:10px
-    }
-    .footer-links{display:flex;gap:27px;color:#d7dfeb}
-    .footer-links a:hover{color:#fff}
-    .mobile-phone-bar{display:none}
-
-    /* Responsive */
-    @media(max-width:1000px){
-      nav{gap:23px}
-      .features,.info-strip{grid-template-columns:repeat(2,1fr)}
-      .feature:nth-child(2){border-right:0}
-      .feature:nth-child(-n+2){border-bottom:1px solid var(--border)}
-      .info:nth-child(2){border-right:0}
-      .info:nth-child(-n+2){border-bottom:1px solid #d8e1ed}
-      .guide-grid{grid-template-columns:repeat(2,1fr)}
-      .hero h1{font-size:44px}
-    }
-
-    @media(max-width:760px){
-      .site{width:100%;border:0}
-      header{height:65px;padding:0 18px}
-      .mobile-toggle{display:block}
-      .top-btn{display:none}
-      nav{
-        position:absolute;top:65px;left:0;right:0;
-        background:#fff;border-bottom:1px solid var(--border);
-        display:none;flex-direction:column;gap:0;padding:8px 18px;
-        box-shadow:0 8px 18px #00000010
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-      nav.open{display:flex}
-      nav a{width:100%;padding:13px 5px}
-      nav a.active:after{display:none}
-      .hero{min-height:420px;background-position:62% center}
-      .hero-content{padding:45px 24px}
-      .hero h1{font-size:40px}
-      .hero p{font-size:15px}
-      .features,.info-strip{grid-template-columns:1fr}
-      .feature,.info{border-right:0!important;border-bottom:1px solid var(--border)}
-      .feature:last-child,.info:last-child{border-bottom:0}
-      section.content-section{padding:48px 20px}
-      .section-heading h2{font-size:26px}
-      .guide-grid,.support-grid{grid-template-columns:1fr}
-      .card img{height:190px}
-      .contact-section{padding:45px 20px}
-      .contact-grid{grid-template-columns:1fr;gap:30px}
-      footer{padding:18px 20px;flex-direction:column;gap:12px;text-align:center}
-      .footer-links{gap:16px;flex-wrap:wrap;justify-content:center}
-      body{padding-bottom:62px}
-      .mobile-phone-bar{
-        display:flex;position:fixed;left:0;right:0;bottom:0;height:62px;
-        background:#1768d4;color:#fff;z-index:100;align-items:center;
-        justify-content:center;box-shadow:0 -5px 18px #0003
+
+      nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
       }
-      .mobile-phone-bar a{
-        display:flex;align-items:center;justify-content:center;gap:9px;
-        width:100%;height:100%;font-weight:800;font-size:16px
+
+      .top-btn {
+        display: inline-block;
+      }
+
+      .page-content {
+        margin: 40px auto;
+      }
+
+      .page-content h1 {
+        font-size: 32px;
       }
     }
 
-    @media(max-width:420px){
-      .brand-title{font-size:16px}
-      .brand-sub{font-size:9px}
-      .hero h1{font-size:35px}
-      .hero-actions{flex-direction:column;align-items:stretch}
-      .primary-btn,.outline-btn{width:100%}
-    }
+
+    @media (max-width: 768px) {
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 21px;
+  }
+
+  .brand-title {
+    font-size: 21px;
+  }
+
+  .brand-sub {
+    font-size: 12px;
+  }
+}
 
 
-    @media (max-width: 760px) {
+@media (max-width: 760px) {
   .mobile-phone-bar {
-    display: flex;
+    display: flex !important;
     position: fixed;
-    bottom: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 60px;
-    z-index: 9999;
-    background: #1768d4;
+    z-index: 99999;
+    background: #1768d4 !important;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 -3px 12px rgba(0,0,0,.20);
   }
 
   .mobile-phone-bar a {
@@ -265,8 +232,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-decoration: none;
+    color: #fff !important;
     font-size: 16px;
     font-weight: 700;
   }
@@ -275,10 +241,25 @@
     padding-bottom: 60px;
   }
 }
+
+.brand-sub {
+    color: #2563eb !important;
+}
+
   </style>
 </head>
-<body><div class="site"><header>
-    <a class="brand" href="#home">
+
+<body>
+
+<div class="site">
+
+  <header>
+    <!-- <div>
+      <div class="brand-icon">♫</div>
+       <div class="brand-title">freshmusic.store</div>
+      <div class="brand-sub">Car Audio Support &amp; Guides</div>
+    </div>  -->
+     <a class="brand" href="#home">
   <div class="brand-icon">♫</div>
   <div>
     <div class="brand-title">freshmusic.store</div>
@@ -286,49 +267,148 @@
   </div>
 </a>
 
-     
-      <nav id="nav">
-        <a class="" href="index.html">Home</a>
-        <a href="index.html#audio-guide">Audio Guide</a>
-        <a href="index.html#support">Support</a>
-        <a class="" href="index.html#contact">Contact</a>
-      </nav>
-      <a class="top-btn" href="index.html#contact">✉ &nbsp; Get in Touch</a>
-      <button class="mobile-toggle" id="menuBtn" aria-label="Open menu">☰</button>
-    </header><main><section class="page-content">
-<div class="eyebrow">Privacy Policy</div>
-<h1>Privacy Policy</h1>
-<p>This Privacy Policy explains how AutoSound Guide may collect and use information when you visit this website or contact us.</p>
-<h2>Information We Collect</h2>
-<p>If you use our contact form, we may receive your name, email address, subject and message.</p>
-<h2>How We Use Information</h2>
-<p>Information submitted through the contact form is used to respond to inquiries and provide requested assistance. We do not sell your personal information.</p>
-<h2>Cookies</h2>
-<p>This website may use basic browser technologies where necessary for functionality. You can control cookies through your browser settings.</p>
-<h2>Contact</h2>
-<p>For privacy questions, please contact us through the Contact Us page.</p>
-</section></main><footer>
-    <!-- <div>© 2024 AutoSound Guide. All rights reserved.</div> -->
-     <div>© 2026 freshmusic.store. All rights reserved.</div>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#audio-guide">Audio Guide</a>
+      <a href="index.html#support">Support</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
 
+    <a class="top-btn" href="index.html#contact">
+      ✉ &nbsp; Get in Touch
+    </a>
+  </header>
+
+
+  <main class="page-content">
+
+    <h1>Privacy Policy</h1>
+
+    <div class="updated">
+      Last Updated: September 7, 2026
+    </div>
+
+    <section class="policy-section">
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy explains how freshmusic.store may collect,
+        use, and protect information when you visit this website or
+        contact us for support and information.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>2. Information We Collect</h2>
+      <p>
+        We may collect information that you voluntarily provide when
+        you contact us or use features of this website.
+      </p>
+
+      <ul>
+        <li>Your name</li>
+        <li>Email address</li>
+        <li>Phone number, if provided</li>
+        <li>Information included in your support request</li>
+        <li>Basic website usage information</li>
+      </ul>
+    </section>
+
+    <section class="policy-section">
+      <h2>3. How We Use Information</h2>
+      <p>
+        Information may be used to:
+      </p>
+
+      <ul>
+        <li>Respond to inquiries and support requests</li>
+        <li>Provide requested information or services</li>
+        <li>Improve website functionality and content</li>
+        <li>Communicate with you regarding your request</li>
+        <li>Maintain website security</li>
+      </ul>
+    </section>
+
+    <section class="policy-section">
+      <h2>4. Cookies</h2>
+      <p>
+        This website may use cookies or similar technologies to
+        improve functionality, understand website usage, and provide
+        a better browsing experience.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>5. Information Sharing</h2>
+      <p>
+        We do not sell or rent your personal information. Information
+        may only be shared when reasonably necessary to provide a
+        requested service, operate the website, comply with legal
+        requirements, or protect the website and its users.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>6. Data Security</h2>
+      <p>
+        We take reasonable measures to help protect information
+        submitted through this website. However, no method of
+        transmission or electronic storage can be guaranteed to be
+        completely secure.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>7. Third-Party Services</h2>
+      <p>
+        This website may use third-party services for hosting,
+        analytics, communication, forms, or other website functions.
+        These services may process information according to their
+        own privacy policies.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time.
+        Any changes will be posted on this page with an updated
+        revision date.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>9. Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy or how your
+        information is handled, please contact us through the
+        website's Contact section.
+      </p>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div>
+      © 2026 freshmusic.store. All rights reserved.
+    </div>
 
     <div class="footer-links">
-     
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-use.html">Terms of Use</a>
       <a href="refund-policy.html">Refund Policy</a>
-
-       <div class="mobile-phone-bar">
-  <a href="tel:+18886713740">
-    ☎ &nbsp; Call Us: 1-888-671-3740
-  </a>
-</div>
+    
     </div>
   </footer>
 
-<script>
-const menuBtn=document.getElementById("menuBtn"),nav=document.getElementById("nav");
-menuBtn.addEventListener("click",()=>{nav.classList.toggle("open");menuBtn.textContent=nav.classList.contains("open")?"✕":"☰"});
-document.querySelectorAll("nav a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menuBtn.textContent="☰"}));
-</script>
-</body></html>
+
+  <div class="mobile-phone-bar">
+    <a href="tel:+18886713740">
+      ☎ &nbsp; Call Us: 1-888-671-3740
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
+```

@@ -1,325 +1,297 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Refund Policy | AutoSound Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      color:#101827;
-      background:#fff;
-      line-height:1.5;
-    }
-    a{text-decoration:none;color:inherit}
-    img{display:block;width:100%;object-fit:cover}
-    button,input,textarea{font:inherit}
+  <title>Refund Policy | freshmusic.store</title>
 
-    :root{
-      --blue:#1768d4;
-      --dark:#071a35;
-      --light:#eef4fb;
-      --border:#dbe3ee;
-      --muted:#596579;
-      --max:1350px;
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .site{
-      width:min(100% - 28px,var(--max));
-      margin:0 auto;
-      border-left:1px solid var(--border);
-      border-right:1px solid var(--border);
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.7;
     }
 
-    /* Header */
-    header{
-      height:70px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:0 32px;
-      background:#fff;
-      position:sticky;
-      top:0;
-      z-index:50;
-      border-bottom:1px solid var(--border);
+    .site {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    .brand{display:flex;align-items:center;gap:11px}
+    header {
+      background: #111111;
+      border-bottom: 1px solid #2a2a2a;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
 
+    .brand-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .brand-sub {
+      color: #aaa;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #aaa;
+    }
+
+    .top-btn {
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #555;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .top-btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .page-content {
+      width: min(900px, 90%);
+      margin: 60px auto;
+      flex: 1;
+    }
+
+    .page-content h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .updated {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    .policy-section {
+      margin-bottom: 32px;
+    }
+
+    .policy-section h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .policy-section p {
+      color: #d0d0d0;
+      margin-bottom: 12px;
+    }
+
+    .policy-section ul {
+      padding-left: 22px;
+      color: #d0d0d0;
+    }
+
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #111;
+      border-top: 1px solid #2a2a2a;
+      padding: 25px 6%;
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .mobile-phone-bar {
+      width: 100%;
+      background: #151515;
+      border-top: 1px solid #292929;
+      padding: 14px 10px;
+      text-align: center;
+    }
+
+    .mobile-phone-bar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+
+
+
+    
+    .brand{display:flex;align-items:center;gap:11px; text-decoration: none;}
     .brand-icon{
       width:38px;height:38px;display:grid;place-items:center;
       color:var(--blue);font-size:27px;font-weight:800;
     }
 
-    .brand-title{font-size:18px;font-weight:800;line-height:1.05}
-
-    .brand-sub{
-      font-size:11px;
-      color:#475569;
-      margin-top:2px
-    }
-
-    nav{
-      display:flex;
-      align-items:center;
-      gap:42px
-    }
-
-    nav a{
-      font-size:14px;
-      font-weight:600;
-      padding:25px 0;
-      position:relative;
-    }
-
-    nav a.active:after{
-      content:"";
-      position:absolute;
-      left:0;
-      right:0;
-      bottom:13px;
-      height:2px;
-      background:var(--blue)
-    }
-
-    .top-btn,.primary-btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:9px;
-      background:var(--blue);
-      color:#fff;
-      border:0;
-      border-radius:7px;
-      padding:11px 18px;
-      font-weight:700;
-      cursor:pointer;
-      box-shadow:0 3px 8px #1768d42b;
-    }
-
-    .mobile-toggle{
-      display:none;
-      border:0;
-      background:none;
-      font-size:27px;
-      cursor:pointer
-    }
-
-    /* Page Content */
-    .page-content{
-      padding:65px 7%;
-      max-width:950px;
-      margin:0 auto;
-    }
-
-    .eyebrow{
-      color:var(--blue);
-      font-size:12px;
-      font-weight:800;
-      letter-spacing:1.6px;
-      text-transform:uppercase;
-      margin-bottom:7px;
-    }
-
-    .page-content h1{
-      font-size:42px;
-      line-height:1.1;
-      margin-bottom:16px;
-    }
-
-    .page-content>p{
-      color:var(--muted);
-      font-size:15px;
-      margin-bottom:30px;
-    }
-
-    .page-content h2{
-      font-size:24px;
-      margin:32px 0 10px;
-      color:#101827;
-    }
-
-    .page-content p{
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.7;
-    }
-
-    .page-content ul{
-      margin:12px 0 20px 22px;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.8;
-    }
-
-    .page-content li{
-      margin-bottom:5px;
-    }
-
-    /* Footer */
-    footer{
-      background:#071a35;
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 35px;
-      font-size:10px
-    }
-
-    .footer-links{
-      display:flex;
-      gap:27px;
-      color:#d7dfeb
-    }
-
-    .footer-links a:hover{
-      color:#fff
-    }
-
-    .mobile-phone-bar{
-      display:none
-    }
-
-    /* Responsive */
-    @media(max-width:1000px){
-      nav{gap:23px}
-    }
-
-    @media(max-width:760px){
-      .site{
-        width:100%;
-        border:0
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
-      header{
-        height:65px;
-        padding:0 18px
+      nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
       }
 
-      .mobile-toggle{
-        display:block
+      .top-btn {
+        display: inline-block;
       }
 
-      .top-btn{
-        display:none
+      .page-content {
+        margin: 40px auto;
       }
 
-      nav{
-        position:absolute;
-        top:65px;
-        left:0;
-        right:0;
-        background:#fff;
-        border-bottom:1px solid var(--border);
-        display:none;
-        flex-direction:column;
-        gap:0;
-        padding:8px 18px;
-        box-shadow:0 8px 18px #00000010
-      }
-
-      nav.open{
-        display:flex
-      }
-
-      nav a{
-        width:100%;
-        padding:13px 5px
-      }
-
-      nav a.active:after{
-        display:none
-      }
-
-      .page-content{
-        padding:48px 20px
-      }
-
-      .page-content h1{
-        font-size:35px
-      }
-
-      .page-content h2{
-        font-size:22px;
-        margin-top:28px
-      }
-
-      .page-content>p{
-        font-size:14px
-      }
-
-      footer{
-        padding:18px 20px;
-        flex-direction:column;
-        gap:12px;
-        text-align:center
-      }
-
-      .footer-links{
-        gap:16px;
-        flex-wrap:wrap;
-        justify-content:center
-      }
-
-      body{
-        padding-bottom:60px
-      }
-
-      .mobile-phone-bar{
-        display:flex;
-        position:fixed;
-        bottom:0;
-        left:0;
-        width:100%;
-        height:60px;
-        z-index:9999;
-        background:#1768d4;
-        align-items:center;
-        justify-content:center;
-      }
-
-      .mobile-phone-bar a{
-        width:100%;
-        height:100%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:white;
-        text-decoration:none;
-        font-size:16px;
-        font-weight:700;
+      .page-content h1 {
+        font-size: 32px;
       }
     }
 
-    @media(max-width:420px){
-      .brand-title{
-        font-size:16px
-      }
+    @media (max-width: 768px) {
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 21px;
+  }
 
-      .brand-sub{
-        font-size:9px
-      }
+  .brand-title {
+    font-size: 21px;
+  }
 
-      .page-content h1{
-        font-size:32px
-      }
-    }
-</style>
+  .brand-sub {
+    font-size: 12px;
+  }
+}
 
+
+
+/* Sticky Phone Bar - Mobile Only */
+.mobile-phone-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-phone-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 12px 15px;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-phone-bar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+  }
+}
+
+
+
+
+@media (max-width: 760px) {
+  .mobile-phone-bar {
+    display: flex !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 99999;
+    background: #1768d4 !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -3px 12px rgba(0,0,0,.20);
+  }
+
+  .mobile-phone-bar a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+}
+
+.brand-sub {
+    color: #2563eb !important;
+}
+
+  </style>
 </head>
 
 <body>
 
 <div class="site">
 
-<header>
+  <header>
+    <!-- <div>
+      <div class="brand-title">freshmusic.store</div>
+      <div class="brand-sub">Car Audio Support &amp; Guides</div>
+    </div> -->
 
+    
     <a class="brand" href="#home">
   <div class="brand-icon">♫</div>
   <div>
@@ -328,149 +300,127 @@
   </div>
 </a>
 
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#audio-guide">Audio Guide</a>
+      <a href="index.html#support">Support</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
 
-  <nav id="nav">
-  <a href="index.html">Home</a>
-  <a href="index.html#audio-guide">Audio Guide</a>
-  <a href="index.html#support">Support</a>
-  <a href="index.html#contact">Contact</a>
-</nav>
-
-<a class="top-btn" href="index.html#contact">
-  ✉ &nbsp; Get in Touch
-</a>
-
-  <button class="mobile-toggle" id="menuBtn" aria-label="Open menu">
-    ☰
-  </button>
-
-</header>
-
-<main>
-
-<section class="page-content">
-
-  <div class="eyebrow">Refund Policy</div>
-
-  <h1>Refund Policy</h1>
-
-  <p>
-    This Refund Policy explains the terms that apply to payments and refund
-    requests related to AutoSound Guide services.
-  </p>
-
-  <h2>General Policy</h2>
-
-  <p>
-    AutoSound Guide aims to provide helpful and reliable car audio information,
-    guides and support. Because our services and resources may involve time,
-    digital information or personalized assistance, refunds are considered
-    on a case-by-case basis.
-  </p>
-
-  <h2>Eligibility for a Refund</h2>
-
-  <p>
-    A refund may be considered when a customer has been charged incorrectly,
-    has experienced a duplicate payment, or when a paid service cannot be
-    delivered as described.
-  </p>
-
-  <ul>
-    <li>Duplicate or accidental charges may be reviewed for a refund.</li>
-    <li>Refund requests should be submitted as soon as possible.</li>
-    <li>Requests are reviewed based on the circumstances of the payment.</li>
-  </ul>
-
-  <h2>Non-Refundable Services</h2>
-
-  <p>
-    Digital information, completed support work, personalized assistance or
-    services that have already been provided may not be eligible for a refund.
-    Refund eligibility may vary depending on the nature of the service.
-  </p>
-
-  <h2>How to Request a Refund</h2>
-
-  <p>
-    To request a refund, please contact us through the Contact Us page and
-    provide the details of your payment and the reason for your request.
-    We may ask for additional information to verify the transaction.
-  </p>
-
-  <h2>Refund Processing</h2>
-
-  <p>
-    If a refund is approved, it will generally be returned using the original
-    payment method. The time required for the refund to appear in your account
-    may depend on your payment provider or financial institution.
-  </p>
-
-  <h2>Changes to This Policy</h2>
-
-  <p>
-    AutoSound Guide may update this Refund Policy from time to time. Any
-    changes will be posted on this page with the updated policy information.
-  </p>
-
-  <h2>Contact</h2>
-
-  <p>
-    If you have questions about this Refund Policy or would like to submit a
-    refund request, please contact us through the Contact Us page.
-  </p>
-
-</section>
-
-</main>
-
-<footer>
-
-  <!-- <div>
-    © 2024 AutoSound Guide. All rights reserved.
-  </div> -->
-
-     <div>© 2026 freshmusic.store. All rights reserved.</div>
+    <a class="top-btn" href="index.html#contact">
+      ✉ &nbsp; Get in Touch
+    </a>
+  </header>
 
 
-  <div class="footer-links">
+  <main class="page-content">
 
-```
-<a href="privacy-policy.html">Privacy Policy</a>
+    <h1>Refund Policy</h1>
 
-<a href="refund-policy.html">Refund Policy</a>
+    <div class="updated">
+      Last Updated: September 7, 2026
+    </div>
 
-<a href="terms-of-use.html">Terms of Use</a>
-```
+    <section class="policy-section">
+      <h2>1. General Policy</h2>
+      <p>
+        We want our customers to have a clear understanding of our
+        refund terms before requesting any service or support.
+        Refund eligibility depends on the type of service purchased
+        and whether the service has already been provided.
+      </p>
+    </section>
 
+    <section class="policy-section">
+      <h2>2. Eligibility for a Refund</h2>
+      <p>
+        A refund may be considered when a service has not yet been
+        provided or when there is a valid issue with a service that
+        cannot reasonably be resolved.
+      </p>
+
+      <p>
+        Refund requests should be submitted as soon as possible and
+        should include the relevant order or service information and
+        the reason for the request.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>3. Non-Refundable Services</h2>
+      <p>
+        Services that have already been fully completed, delivered,
+        or used may not be eligible for a refund, except where
+        required by applicable law.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>4. How to Request a Refund</h2>
+      <p>
+        To request a refund, please contact us through the Contact
+        section of the website and provide:
+      </p>
+
+      <ul>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>Relevant order or service information</li>
+        <li>A brief explanation of the refund request</li>
+      </ul>
+    </section>
+
+    <section class="policy-section">
+      <h2>5. Refund Processing</h2>
+      <p>
+        Approved refunds will be processed using the original payment
+        method where possible. Processing times may vary depending
+        on the payment provider or financial institution.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>6. Changes to This Policy</h2>
+      <p>
+        We may update this Refund Policy from time to time.
+        Any changes will be posted on this page with an updated
+        revision date.
+      </p>
+    </section>
+
+    <section class="policy-section">
+      <h2>7. Contact</h2>
+      <p>
+        If you have questions about this Refund Policy or would like
+        to request a refund, please contact us through the website's
+        Contact section.
+      </p>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div>
+      © 2026 freshmusic.store. All rights reserved.
+    </div>
+
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="refund-policy.html">Refund Policy</a>
+    
+    </div>
+  </footer>
+
+
+  <div class="mobile-phone-bar">
+    <a href="tel:+18886713740">
+      ☎ &nbsp; Call Us: 1-888-671-3740
+    </a>
   </div>
-
-</footer>
-
-<div class="mobile-phone-bar">
-  <a href="tel:+18886713740">
-    ☎ &nbsp; Call Us: 1-888-671-3740
-  </a>
-</div>
-
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const nav = document.getElementById("nav");
-
-menuBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  menuBtn.textContent = nav.classList.contains("open") ? "✕" : "☰";
-});
-
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    menuBtn.textContent = "☰";
-  });
-});
-</script>
 
 </div>
 
 </body>
 </html>
+
