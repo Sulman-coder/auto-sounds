@@ -79,7 +79,7 @@
       overflow:hidden;
       background:
         linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.68) 36%,rgba(0,0,0,.10) 75%),
-        url("/hero1.jpg") center/cover;
+        url("/hero2.jpeg") center/cover;
     }
     .hero-content{padding:45px 7%;max-width:590px;color:#fff}
     .hero h1{font-size:52px;line-height:1.04;letter-spacing:-1.5px;margin-bottom:17px}
@@ -258,6 +258,10 @@
     color: #2563eb !important;
 }
 
+.brand-title {
+    color: #071a35;
+}
+
 
     /* Responsive */
     @media(max-width:1000px){
@@ -423,6 +427,166 @@ footer{
 .mobile-phone-bar { height:74px !important; }
 .mobile-phone-bar a { font-size:20px !important; font-weight:800 !important; letter-spacing:.2px; }
 @media (max-width:768px) { .phone-contact-item .ci { font-size:26px; width:34px; min-width:34px; } .desktop-call-btn { width:100%; box-sizing:border-box; padding:14px 16px; font-size:17px !important; } .mobile-phone-bar { height:76px !important; } .mobile-phone-bar a { font-size:19px !important; } }
+
+
+
+
+
+/* Hero */
+.hero{
+  min-height:310px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.68) 36%,rgba(0,0,0,.10) 75%),
+    url("/hero2.jpeg") center/cover;
+}
+
+.hero-content{
+  padding:45px 7%;
+  max-width:900px;
+  width:100%;
+  color:#fff;
+}
+
+.hero h1{
+  font-size:52px;
+  line-height:1.04;
+  letter-spacing:-1.5px;
+  margin-bottom:17px;
+}
+
+.hero h1 span{
+  color:#2e82f3;
+}
+
+.hero p{
+  font-size:17px;
+  max-width:430px;
+  color:#f3f6fa;
+  margin-bottom:22px;
+}
+
+/* Buttons + Girl */
+.hero-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:35px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  flex-shrink:0;
+}
+
+/* .outline-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:13px 19px;
+  border:1px solid #fff;
+  border-radius:7px;
+  color:#fff;
+  background:transparent;
+  font-weight:700;
+} */
+ .outline-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:15px 28px;
+  border:1px solid #2e82f3;
+  border-radius:7px;
+  color:#fff;
+  background:#2e82f3;
+  font-weight:700;
+  font-size:23px;
+  min-width:150px;
+}
+
+/* .hero-girl{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  height:145px;
+  margin-top:-15px;
+} */
+
+
+
+
+ .hero-girl{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  height:300px;
+  margin-top:0;
+  margin-bottom:-65px;
+  overflow:visible;
+}
+
+.hero-girl img{
+  display:block;
+  width:auto;
+  height:380px;
+  max-width:400px;
+  object-fit:contain;
+}
+
+
+/* ===== MOBILE FOOTER ===== */
+@media (max-width:760px){
+
+  footer{
+    background:#fff !important;
+    color:#111827 !important;
+    padding:16px 20px;
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+    border-top:1px solid #dbe3ee;
+  }
+
+  footer .footer-links{
+    color:#1768d4 !important;
+    gap:16px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  footer .footer-links a{
+    color:#1768d4 !important;
+  }
+
+  footer .footer-links a:hover{
+    color:#071a35 !important;
+  }
+
+  /* Mobile Sticky Call Button */
+  .mobile-phone-bar{
+    height:50px !important;
+    background:#0b3d7a !important;
+    box-shadow:0 -3px 12px rgba(0,0,0,.18);
+  }
+
+  .mobile-phone-bar a{
+    height:50px !important;
+    color:#fff !important;
+    font-size:15px !important;
+    font-weight:700;
+  }
+
+  body{
+    padding-bottom:50px !important;
+  }
+}
 </style>
 
 </head>
@@ -459,16 +623,26 @@ footer{
   </header>
 
   <main id="home">
+
+
     <section class="hero">
-      <div class="hero-content">
-        <h1>Better Sound.<br><span>Every Drive.</span></h1>
-        <p>Simple car audio information, practical guides, installation tips, and troubleshooting help.</p>
-        <div class="hero-actions">
-          <a class="primary-btn" href="#audio-guide">▣ &nbsp; Explore Audio Guides</a>
-          <a class="outline-btn" href="#contact">✉ &nbsp; Contact Us</a>
-        </div>
+  <div class="hero-content">
+    <h1>Better Sound.<br><span>Every Drive.</span></h1>
+
+    <p>Simple car audio information, practical guides, installation tips, and troubleshooting help.</p>
+
+    <div class="hero-bottom">
+      <div class="hero-actions">
+        <a class="primary-btn" href="#audio-guide">▣ &nbsp; Explore Audio Guides</a>
+        <a class="outline-btn" href="tel:+18886713740">☎ &nbsp; Call Now</a>
       </div>
-    </section>
+
+      <div class="hero-girl">
+        <img src="portrait-beautiful-girl-pointing-copy-space_979672-3784-removebg-preview.png" alt="Girl pointing toward the buttons">
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="features">
       <div class="feature">
