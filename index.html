@@ -189,7 +189,7 @@
 /* ===== DARK TEXT FOR LIGHT/WHITE SECTIONS ===== */
 
 /* Main headings */
-.section-heading h2,
+/* .section-heading h2, */
 .contact-copy h2,
 .card h3,
 .support-card h3,
@@ -199,7 +199,7 @@
 }
 
 /* Paragraph text */
-.section-heading p,
+/* .section-heading p, */
 .card p,
 .support-card p,
 .feature p,
@@ -518,6 +518,10 @@ footer{
 }
 
 
+.contact-section h2 .section-heading p{
+  color:#fff !important;
+}
+
 
 @media (max-width:760px){
 
@@ -592,6 +596,23 @@ footer{
 
   body{
     padding-bottom:50px !important;
+  }
+}
+
+
+@media (max-width:430px){
+  .hero-actions{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    width:100% !important;
+    gap:12px !important;
+  }
+
+  .hero-actions a{
+    width:100% !important;
+    min-width:0 !important;
+    box-sizing:border-box !important;
   }
 }
 </style>
